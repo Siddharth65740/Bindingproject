@@ -1,0 +1,13 @@
+<p>Welcome to template  reference</p>
+Name: <input type="text" #nameref>
+<input type="button" value="click here" (click)="passValue(nameref)">
+<br/>
+<h2>{{msg}}</h2>
+
+<h2>Calculator</h2>
+Enter  Number 1: <input type="number" min="0" oninput="this.value =
+ !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" #no1><br/>
+Enter  Number 2: <input type="number" min="0" oninput="this.value =
+ !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" #no2><br/>
+<input type="submit" value="Add" (click)="addValue(no1,no2)"><br/>
+Sum is: {{sum}}
