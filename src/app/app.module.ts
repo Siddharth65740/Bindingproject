@@ -9,6 +9,7 @@ import { TemplateRefComponent } from './template-ref/template-ref.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.
     EventBindingComponent,
     TemplateRefComponent,
     TwoWayBindingComponent,
-    ModelDrivenFormComponent
+    ModelDrivenFormComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule
