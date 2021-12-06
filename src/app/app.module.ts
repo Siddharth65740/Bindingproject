@@ -7,7 +7,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TemplateRefComponent } from './template-ref/template-ref.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,11 @@ import {FormsModule} from "@angular/forms";
     PropertyBindingComponent,
     EventBindingComponent,
     TemplateRefComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    ModelDrivenFormComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
